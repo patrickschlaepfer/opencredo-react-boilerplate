@@ -8,17 +8,17 @@ import 'styles/admin.scss';
 const mapStateToProps = ({ spinner }) => ({ spinner });
 const AdminPageLayout = (props) =>
   (
-    <div id="admin-layout" className="page-container">
-      <MainHeader />
-      <div className="view-container">
-        {props.children}
-      </div>
-      <MainFooter />
-      <Spinner
-        canShow={props.spinner.canShow}
-        messageId={props.spinner.messageId}
-      />
+  <div id="admin-layout" className="page-container">
+    <MainHeader />
+    <div className="view-container">
+      {props.children}
     </div>
+    <MainFooter />
+    <Spinner
+      canShow={props.spinner.canShow}
+      messageId={props.spinner.messageId}
+    />
+  </div>
   );
 
 AdminPageLayout.propTypes = {

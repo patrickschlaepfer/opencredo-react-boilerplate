@@ -6,24 +6,23 @@ import styles from './LandingPage.scss';
 
 const LandingPageHero = (props) =>
   (
-    <Hero displayUnderNavbar>
-      <HeroBackground image={props.backgroundImage} />
-      <HeroContent>
-        <VAContainer horizontal vertical>
-          <VAMiddle>
-            <div className="text-center">
-              <h1 className={styles['hero-title']}>
-                {config.name}
-              </h1>
-
-              <p className={styles['hero-description']}>
-                {config.description}
-              </p>
-            </div>
-          </VAMiddle>
-        </VAContainer>
-      </HeroContent>
-    </Hero>
+  <Hero displayUnderNavbar>
+    <HeroBackground image={props.backgroundImage} />
+    <HeroContent>
+      <VAContainer horizontal vertical>
+        <VAMiddle>
+          <div className="text-center">
+            <h1 className={styles['hero-title']}>
+              {config.name}
+            </h1>
+            <p className={styles['hero-description']}>
+              {config.description}
+            </p>
+          </div>
+        </VAMiddle>
+      </VAContainer>
+    </HeroContent>
+  </Hero>
   );
 
 LandingPageHero.propTypes = {

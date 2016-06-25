@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, IndexRedirect } from 'react-router';
-import { requireAuthentication as restrict } from 'containers/AuthenticatedComponent';
+import { requireAuthentication as restrict } from './containers/AuthenticatedComponent';
 
-import AppContainer from 'containers/AppContainer';
-import HeroPageLayout from 'containers/HeroPageLayout';
-import AdminPageLayout from 'containers/AdminPageLayout';
-import LandingPage from 'pages/LandingPage/LandingPage';
-import AboutPage from 'pages/AboutPage/AboutPage';
-import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
+import AppContainer from './containers/AppContainer';
+import HeroPageLayout from './containers/HeroPageLayout';
+import AdminPageLayout from './containers/AdminPageLayout';
+import LandingPage from './pages/LandingPage/LandingPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ProfileEditPage from './pages/ProfileEditPage/ProfileEditPage';
 
 export default(
   // Route components without path will render their children...

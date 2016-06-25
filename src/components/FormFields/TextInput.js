@@ -26,7 +26,7 @@ class TextInput extends React.Component {
           placeholder={placeholder}
           {...field}
         />
-        { children }
+        {children}
       </div>
     );
   }

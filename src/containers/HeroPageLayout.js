@@ -7,17 +7,17 @@ import Spinner from 'components/Spinner/Spinner';
 const mapStateToProps = ({ spinner }) => ({ spinner });
 const HeroPageLayout = (props) =>
   (
-    <div className="page-container">
-      <MainHeader />
-      <div className="view-container">
-        {props.children}
-      </div>
-      <MainFooter />
-      <Spinner
-        canShow={props.spinner.canShow}
-        messageId={props.spinner.messageId}
-      />
+  <div className="page-container">
+    <MainHeader />
+    <div className="view-container">
+      {props.children}
     </div>
+    <MainFooter />
+    <Spinner
+      canShow={props.spinner.canShow}
+      messageId={props.spinner.messageId}
+    />
+  </div>
   );
 
 HeroPageLayout.propTypes = {
